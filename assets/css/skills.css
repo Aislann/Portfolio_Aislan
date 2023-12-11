@@ -22,18 +22,16 @@
 
 .skills .softskills ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
 }
 
 .skills .softskills ul li{
-   
-    margin-left: 2rem;
-    padding: .7rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
     font-size: 18px;
 }
 
@@ -60,3 +58,4 @@
 .c{
     width: 45%;
 }
+

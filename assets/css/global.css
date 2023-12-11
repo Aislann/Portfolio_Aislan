@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cutive', serif;
 }
 
 .main{
@@ -36,13 +36,13 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: -1;
     transform: rotate(180deg);
 }
 
 body{
     background: linear-gradient(120deg, rgba(0, 29, 43, 1) 0%, rgba(0, 71, 56, 1) 15%, rgba(0, 107, 106, 1) 30%, rgba(57, 126, 104, 1) 50%, rgba(95, 146, 125, 1) 70%, rgba(128, 149, 136, 1) 100%);
     color: white;
+    margin-top: 30px;
 }
 
 a{

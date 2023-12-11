@@ -27,9 +27,15 @@
     margin-right: .5rem;
 }
 
-  .experience h2 {
+.experience h2 {
     border-bottom: 2px solid #ffffff; 
     padding-bottom: 5px;
     margin-bottom: 10px;
-  }
+}
+
+.experience h3{
+    font-weight: 500;
+    font-size: 20px;
+}
   
+

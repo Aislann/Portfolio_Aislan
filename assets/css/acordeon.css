@@ -4,8 +4,9 @@
     width: 100%;
     border: 1px solid;
     border-radius: 1rem;
-    margin:1rem 0;
+    margin:2rem 0;
     transition: .25s;
+    margin-top: 30px;
 }
 
 .acordeon.open,

@@ -11,26 +11,62 @@
     <link rel="stylesheet" href="./css/languages.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/sobremim.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/icon_pag/favicon-16x16.png" type="image/x-icon">
 
     <title>Portfólio</title>
 </head>
+	
 <body>
+    <div class="menu-icon" id="menu-toggle">&#9776;</div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#home" c>HOME</a></li>
+            <li><a href="./portfolio.html">IMAGENS DO PORTFOLIO</a></li>
+        </ul>
+    </div>
+
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <main class="main"> 
-        <header class="header"> 
-            <img class="photo" src="./img/img_aislan.jfif" alt="Foto Aislan Oliveira">
         
-        <h1> Olá, eu sou Aislan Oliveira</h1>
+        
+        <header class="header"> 
+            <img class="photo" src="./img/aislan_img.jpeg" alt="Foto Aislan Oliveira">
+        
+        <h2> Transformando ideias em realidade,<br> sou Aislan Oliveira, seu dev full stack!</h2>
+        
 
         <div class="information"> <!-- div das informações-->
+            
             <p class="job">Fullstack Developer</p>
             <p class="location">Aracaju-SE</p>
             <p class="phone">
-                <a href="tel:(79) 9 8856-6494">(79) 9 8856-6494</a> <!--Link para o número -->
+                <a href="https://api.whatsapp.com/send?phone=5579988566494" target="_blank">(79) 9 8856-6494</a> <!--Link para o número -->
             </p> 
             <p class="email">
-                <a href="mailton: aislanaju2023@gmail.com">aislanaju2023@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aislanaju2023@gmail.com" target="_blank">aislanaju2023@gmail.com</a>
             </p>
         </div>
+        
         </header>
 
         <section class="acordeon">
@@ -84,8 +120,8 @@
 
             <div class="content">
                 <ul class="languages">
-                    <li>Português nativo</li>
-                    <li>Inglês intermediário</li>
+                    <li>Português Nativo</li>
+                    <li>Inglês Intermediário</li>
                 </ul>
             </div>
         </section>
@@ -97,25 +133,29 @@
 
             <div class="content">
                 <ul class="portfolio">
+                    <h4 class="aviso_port">*Para ter acesso as imagens basta clicar no menu ao canto superior direito e ir em imagens do portfolio</h4>
+                    <li>
+                        <span class="title github">Relógio Digital:</span>
+                        <a href="https://github.com/Aislann/Relogio_Digital" target="_blank">https://github.com/Aislann/Relogio_Digital</a>
+                    </li>
+                    <li>
+                        <span class="title github">Formulário com php:</span>
+                        <a href="https://github.com/Aislann/API_Formulario" target="_blank">https://github.com/Aislann/API_Formulario</a>
+                    </li>
+                    <li>
+                        <span class="title github">Consumindo API OpenWeather:</span>
+                        <a href="https://github.com/Aislann/API_Previsao_Tempo" target="_blank">https://github.com/Aislann/API_Previsao_Tempo</a>
+                    </li>
                     <li>
                         <span class="title github">Consumindo API via CEP:</span>
                         <a href="https://github.com/Aislann/Consumindo-uma-API-para-buscar-CEP" target="_blank">https://github.com/Aislann/Consumindo-uma-API-para-buscar-CEP</a>
                     </li>
 
-                    <li>
-                        <span class="title github">Consumindo API OpenWeather:</span>
-                        <a href="https://github.com/Aislann/API_Previsao_Tempo" target="_blank">https://github.com/Aislann/API_Previsao_Tempo</a>
-                    </li>
+                    
 
-                    <li>
-                        <span class="title github">Formulário com php:</span>
-                        <a href="https://github.com/Aislann/API_Formulario" target="_blank">https://github.com/Aislann/API_Formulario</a>
-                    </li>
+                    
 
-                    <li>
-                        <span class="title github">Relógio Digital:</span>
-                        <a href="https://github.com/Aislann/Relogio_Digital" target="_blank">https://github.com/Aislann/Relogio_Digital</a>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -131,7 +171,7 @@
                     <h2> Experiência Profissional</h2>
                     <li>
                         <span class="title">
-                            <h3>Estágio Psiu Psiu</h3>
+                            <h3>Estágio - Psiu Psiu</h3>
                         </span>
                         <span class="period">Setembro 2023 - Novembro 2023</span>
                     </li>
@@ -160,13 +200,28 @@
                 </ul>
             </div>
             
+            
+            
+        </section>
 
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Sobre mim</h2>
+            </button>
+
+            <div class="content">
+                <span class="txt_sobremim">Busco transformar minha paixão por tecnologia em ações concretas. Almejo sempre cade vez mais por conhecimentos práticos e teóricos afim de alcançar resultados cada vez melhores e inovadores.</span>
+            </div>
         </section>
 
 
+    
     </main>
+
     
 
     <script src="./js/acordeon.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
+
 </html>

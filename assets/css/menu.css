@@ -1,0 +1,50 @@
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    z-index: 2;
+    color: #fff;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(120deg, rgba(0, 29, 43, 1) 0%, rgba(0, 71, 56, 1) 15%, rgba(0, 107, 106, 1) 30%, rgba(57, 126, 104, 1) 50%, rgba(95, 146, 125, 1) 70%, rgba(128, 149, 136, 1) 100%);
+    overflow-x: hidden;
+    padding-top: 60px;
+    right: -300px; 
+    transition: right 0.3s ease-in-out;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+
+.menu-visible {
+    right: 0; 
+}
