@@ -60,7 +60,7 @@ a:hover{
     src: url('');
  } */
 
- @media only screen and (min-width:768px){
+ @media only screen and (min-width:600px){
     .main{
         max-width: 1024px;
         margin: 1rem auto;
@@ -71,5 +71,6 @@ a:hover{
     {
         width: 100vw;
     }
-    
+
+
  }
