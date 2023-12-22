@@ -1,88 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Consulta CNPJ</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/favicon-16x16.png" type="image/x-icon">
-  <body>
-    <div class="row"> <!-- div de linha -->
-        <div class="col-md-4"> <!--div da esquerda-->
-            
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <div class="col-md-4" id="telaConsulta"> <!--div do meio-->
-
-            <div class="form-group row"> <!--- classe exclusiva pra row -->
-                <h2 class="titulo">Consultador de CNPJ</h2>
-                <div class="col-md-12">
-                    <label for="cnpj">CNPJ</label>
-                    <input type="text" onblur="validarCnpj(this.value)" id="cnpj" data-mask="00.000.000/0000-00" class="form-control"> <!-- data-mask="00.000.000/0000-00" mascara para o cnpj-->
-                </div>
-            </div>
-
-            
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label for="">Razão Social</label>
-                    <input type="text" id="razao" disabled class="form-control">
-                </div>
-                <div class="col-md-6">
-                    <label for="">Nome fantasia</label>
-                    <input type="text" id="nomeFantasia" disabled class="form-control">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label for="">Abertura</label>
-                    <input type="text" id="abertura" disabled class="form-control">
-                </div>
-                <div class="col-md-6">
-                    <label for="">Situação da Empresa</label>
-                    <input type="text" id="status" disabled class="form-control">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label for="">Endereço</label>
-                    <input type="text" id="endereco" disabled class="form-control">
-                </div>
-                <div class="col-md-6">
-                    <label for="">Município</label>
-                    <input type="text" id="municipio" disabled class="form-control">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label for="">Estado</label>
-                    <input type="text" id="estado" disabled class="form-control">
-                </div>
-                <div class="col-md-6">
-                    <label for="">Telefone</label>
-                    <input type="text" id="telefone" disabled class="form-control">
-                </div>
-            </div>
-        </div>
-
-
-        
-        
-
-        <div class="col-md-4"> <!--div da direita-->
-
-        </div>
-
-    </div>
-    <script src="assets/script/scrip.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-  
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/background.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/sobremim.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/img/icon_pag/favicon-16x16.png" type="image/x-icon">
+
+    <title>Portfólio</title>
+</head>
+	
+<body>
+    <!-- <div class="menu-icon" id="menu-toggle">&#9776;</div> -->
+
+    <!-- <div class="menu">
+        <ul>
+            <li><a href="#home" c>HOME</a></li>
+            <li><a href="./assets/portfolio.html">IMAGENS DO PORTFOLIO</a></li>
+        </ul>
+    </div> -->
+
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <main class="main"> 
+        
+        
+        <header class="header"> 
+            <img class="photo" src="./assets/img/aislan_img.jpeg" alt="Foto Aislan Oliveira">
+        
+        <h2> Transformando ideias em realidade,<br> sou Aislan Oliveira, seu dev full stack!</h2>
+        
+
+        <div class="information"> <!-- div das informações-->
+            
+            <p class="job">Fullstack Developer</p>
+            <p class="location">Aracaju-SE</p>
+            <p class="phone">
+                <a href="https://api.whatsapp.com/send?phone=5579988566494" target="_blank">(79) 9 8856-6494</a> <!--Link para o número -->
+            </p> 
+            <p class="email">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aislanaju2023@gmail.com" target="_blank">aislanaju2023@gmail.com</a>
+            </p>
+        </div>
+        
+        </header>
+        <section class="acordeon open">
+            <button class="trigger" type="button">
+                <h2>Sobre mim</h2>
+            </button>
+
+            <div class="content">
+                <span class="txt_sobremim">Busco transformar minha paixão por tecnologia em ações concretas. Almejo cada vez mais por conhecimentos práticos e teóricos afim de alcançar resultados melhores e inovadores.</span>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="hardskills">
+                        <h3>Hardskills</h3>
+                        <ul>
+                            <li> 
+                                <img class="html_css_js" src="./assets/img/hardskills/html_css_js.png" alt="html"> <!-- linhas para as informações, imagens ou textos-->
+                            </li>
+                            <li> 
+                                <img class="sql" src="./assets/img/hardskills/sql.png" alt="sql">
+                            </li>
+                            <li> 
+                                <img class="c" src="./assets/img/hardskills/c.png" alt="c#">
+                            </li>
+                            <li> 
+                                <img class="python" src="./assets/img/hardskills/python.png" alt="python">
+                            </li>
+                            
+                        </ul>
+                    </section>
+
+                    <section class="softskills">
+                        <h3>Softskills</h3>
+                        <ul>
+                            <li>Empatia</li>
+                            <li>Proatividade</li>
+                            <li>Relacionamento Interpessoal</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Organização</li>
+                            <li>Disposição para o aprendizado</li>
+                            <li>Determinação</li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages">
+                    <li>Português Nativo</li>
+                    <li>Inglês Intermediário</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Portfólios</h2>
+            </button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <!-- <h4 class="aviso_port">*Para ter acesso as imagens basta clicar no menu ao canto superior direito e ir em imagens do portfolio</h4> -->
+                    <li>
+                        <span class="title github">Consulta CNPJ: </span> 
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/ConsultaAPI_CNPJ" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/ConsultaAPI_CNPJ/" target="_blank">Projeto</a></a></button>
+                    </li>
+                    <li>
+                        <span class="title github">Calculadora: </span> 
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/Calculadora" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/Calculadora/" target="_blank">Projeto</a></a></button>
+                    </li>
+                    <li>
+                        <span class="title github">Almoxarifado: </span> 
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/Almoxarifado" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/Almoxarifado/" target="_blank">Projeto</a></a></button>
+                    </li>
+                    <li>
+                        <span class="title github">Relógio Digital: </span> 
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/Relogio_Digital" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/Relogio_Digital/" target="_blank">Projeto</a></a></button>
+                    </li>
+                    <li>
+                        <span class="title github">Formulário com php:</span>
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/API_Formulario" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/API_Formulario/" target="_blank">Projeto</a></button>
+                    </li>
+                    <li>
+                        <span class="title github">Consumindo API OpenWeather:</span>
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/API_Previsao_Tempo" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/API_Previsao_Tempo/" target="_blank">Projeto</a></button>
+                        
+                    </li>
+                    <li>
+                        <span class="title github">Consumindo API via CEP:</span>
+                        <button class="btn-portfolio"><a href="https://github.com/Aislann/Consumindo-uma-API-para-buscar-CEP" target="_blank">Github</a></button>
+                        <button class="btn-portfolio"><a href="https://aislann.github.io/Consumindo-uma-API-para-buscar-CEP/" target="_blank">Projeto</a></button>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Experiências</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience">
+                    <h2> Experiência Profissional</h2>
+                    <li>
+                        <span class="title">
+                            <h3>Estágio - Psiu Psiu</h3>
+                        </span>
+                        <span class="period">Setembro 2023 - Novembro 2023</span>
+                    </li>
+                    <br>
+                    <h2> Experiência Acadêmica</h2>
+                    <li>
+                        <span class="title">
+                            <h3>Ciência da Computação - Universidade Tiradentes</h3>
+                        </span>
+                        <span class="period">Janeiro 2020 - Dezembro 2024</span>
+                    </li>
+
+                    <li>
+                        <span class="title">
+                            <h3>Desenvolvedor Full Stack - Primeiro Emprego - SENAI</h3>
+                        </span>
+                        <span class="period">Novembro 2023 - Maio 2024</span>
+                    </li>
+
+                    <li>
+                        <span class="title">
+                            <h3>Dank Code - Desenvolvimento de games</h3>
+                        </span>
+                        
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+        </section>
+    
+    </main>
+
+    
+
+    <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/menu.js"></script>
 </body>
+
 </html>
