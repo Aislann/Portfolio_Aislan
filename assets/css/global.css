@@ -43,7 +43,18 @@ body{
     background: linear-gradient(120deg, rgba(0, 29, 43, 1) 0%, rgba(0, 71, 56, 1) 15%, rgba(0, 107, 106, 1) 30%, rgba(57, 126, 104, 1) 50%, rgba(95, 146, 125, 1) 70%, rgba(128, 149, 136, 1) 100%);
     color: white;
     margin-top: 30px;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 
 a{
     color: white;
